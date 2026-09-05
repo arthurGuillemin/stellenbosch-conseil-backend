@@ -52,9 +52,6 @@ export async function submitClientRequest(req, res) {
      * les informations personnelles en production.
      */
     if (process.env.NODE_ENV !== "production") {
-      console.log("\n==============================");
-      console.log("NOUVELLE DEMANDE CLIENT");
-      console.log("==============================");
 
       console.log({
         name,
